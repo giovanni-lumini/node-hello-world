@@ -14,14 +14,13 @@ altrimenti stampa Access restricted
 
 const api_key = process.env.PIN;
 
-const word = process.argv.slice(2);
+const word = process.argv[2];
 
-if (word == "admin" && api_key === "666"){
+if (word == "admin" && api_key == 666){
     console.log(`Welcome ${word}`);
 } else {
     console.log("Access restricted");
 };
-clearInterval
 
 
 
